@@ -10,7 +10,7 @@ body{
 
 header{
     background-color: rgb(164, 9, 9);
-    width: 100%;
+    width: 100vw;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -92,17 +92,22 @@ main > p{
     margin: 30px 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .card{
     width: 300px;
-    height: 400px;
+
    
 }
 
 .cards img{
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
+}
+
+.cards img:hover{
+    opacity: 0.8;
 }
 
 .cardinfo{
@@ -113,4 +118,67 @@ main > p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -5px;
+    margin-top: -5px; 
+}
+
+.cardnome{
+    color: white;
+    font-size: 20px;
+   font-weight: 30px;
+   padding-bottom: 10px;
+}
+
+.cardpreco{
+   background-color: limegreen;
+    width: 180px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.botao{
+    background-color: limegreen;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+a:link, a:visited{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:600;
+    width: 250px;
+    text-align: center;
+    
+}
+
+a:hover{
+    background-color: green;
+}
+
+footer{
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer address{
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+footer ul li{
+    font-weight: 600;
+    text-transform: uppercase;
+    }
+
+
+footer ul li:hover{
+    background-color: limegreen;
+}
